@@ -1,0 +1,15 @@
+.word-container{
+    display: flex;
+    gap: .25em;
+    font-size: 6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: monospace;
+  
+}
+
+@media(max-width:550px){
+    .word-container{
+        font-size: 4rem;
+    }
+}
