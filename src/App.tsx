@@ -4,8 +4,9 @@ import HangmanDrawing from "./Components/HangmanDrawing.tsx";
 import HangmanWord from "./Components/HangmanWord.tsx";
 import Keyboard from "./Components/Keyboard.tsx";
 
+const wordToGuess: string = words[Math.floor(Math.random() * words.length)];
+
 function App() {
-  const wordToGuess: string = words[Math.floor(Math.random() * words.length)];
   const [guessedLetters, setGuessedLetters] = useState<string[]>([]);
 
   const incorrectGuessedLetters = guessedLetters.filter(
